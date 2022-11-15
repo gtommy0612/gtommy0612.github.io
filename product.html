@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="/css/fontawesome-free-6.2.0-web/css/all.css">
+</head>
+<body>
+  <!-- header -->
+  <header> 
+    <div class="header">
+      <a href="/index.html"><img src="/source/icon/logo_header.svg" alt="wumato"></a>
+      <div class="header-menu">
+        <nav class="menu">
+          <li><a href="/search.html">查詢頁面</a></li>
+          <li><a href="">檢驗服務</a></li>
+          <li><a href="">新聞快訊</a></li>
+          <li><a href="">聯絡我們</a></li>
+        </nav> 
+        <input id="nav-toggle" type="checkbox">
+        <label for="nav-toggle" class="ham">
+          <div class="ham-origin">
+            <div class="ham-bar ham-bar--top"></div>
+            <div class="ham-bar ham-bar--middle"></div>
+            <div class="ham-bar ham-bar--bottom"></div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- category -->
+    <div class="category">
+      <div class="category-text">  
+        <li><a href="/index.html">首頁</a></li>
+        <li><a href="">/查詢頁面</a></li>
+        <li><a href="" style="color:#F78F1E;">/蔬果</a></li>
+      </div>
+    </div>
+
+  <!-- product -->
+  <div class="product">
+    <div class="product-img">
+      <img src="https://picsum.photos/576/380" alt="productImage">
+    </div>
+    <div class="product-info">
+      <h1>鳳梨</h1>
+      <div class="product-info-text">
+        <div class="product-info-star">
+          <div>
+            <span class="fas fa-star"></span>
+            <span class="fas fa-star"></span>
+            <span class="fas fa-star"></span>
+            <span class="fas fa-star"></span>
+            <span class="fas fa-star"></span>
+          </div>
+          <span>5.0</span>
+          <a href="">(12)</a>
+        </div>
+        <li>
+          <p class="product-info-title">簡歷</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh urna cras nunc odio turpis feugiat. Imperdiet faucibus nulla dolor in volutpat egestas nulla vitae. Molestie suspendisse at at sed varius et urna. Dolor massa in odio porta cursus faucibus egestas at tincidunt.
+            Dolor massa in odio porta cursus faucibus egestas at tincidunt.
+            Dolor massa in odio porta cursus faucibus egestas at tincidunt.</p>
+          </li>
+        <li>
+          <p class="product-info-title">產地</p>
+          <p>Lorem ipsum dolor sit amet, consectetur </p>
+        </li>
+        <li>
+          <p class="product-info-title">達成率</p>
+          <p>100 %</p>
+        </li>
+      </div>
+      <section>
+        <div class="product-btn">
+          <div class="btn">
+            <img src="./source/icon/shopping-cart.svg" alt="">
+            <p>立即購買</p>
+          </div>
+        </div>
+        <div class="product-btn">
+          <div class="btn-outline">
+            <img src="./source/icon/share.svg" alt="">
+            <p>分享頁面</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- content -->
+  <div class="content">
+    <div class="content-left">
+      <div class="tilte-section">
+        <h3>檢驗履歷</h3>
+      </div> 
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn-left" onclick="leftClick()">當月</button>
+        <button type="button" class="toggle-btn-right" onclick="rightClick()">當年</button>
+      </div>
+      <container class="pesticide-section">
+        <div class="pesticide-month"><h3>09月</h3></div>
+        <div class="pesticide-data">
+          <div class="element">
+            <p>2022/09/01</p>
+            <ul>
+              <div class="title">檢測項目</div>
+              <div class="text">農藥快篩</div>
+              <div class="title">檢測單位</div>
+              <div class="text">自行檢驗</div>
+            </ul>
+            <ul>
+              <div class="title">檢測項目</div>
+              <div class="text">農藥快篩</div>
+              <div class="title">檢測單位</div>
+              <a class="text" target="_blank" href="https://global.turingcerts.com/en/co/cert?hash=e267d9b50b0c2b6e12be27e290c25fcdaaa8da169f1af533c5a0478f5bff8ab1">區塊鏈報告</a>
+            </ul>
+          </div>
+          <div class="element">
+            <p>2022/09/01</p>
+            <ul>
+              <div class="title">檢測項目</div>
+              <div class="text">農藥快篩</div>
+              <div class="title">檢測單位</div>
+              <div class="text">自行檢驗</div>
+            </ul>
+            <ul>
+              <div class="title">檢測項目</div>
+              <div class="text">農藥快篩</div>
+              <div class="title">檢測單位</div>
+              <a class="text" target="_blank" href="https://global.turingcerts.com/en/co/cert?hash=e267d9b50b0c2b6e12be27e290c25fcdaaa8da169f1af533c5a0478f5bff8ab1">區塊鏈報告</a>
+            </ul>
+          </div>
+          <div class="element">
+            <p>2022/09/01</p>
+            <ul>
+              <div class="title">檢測項目</div>
+              <div class="text">農藥快篩</div>
+              <div class="title">檢測單位</div>
+              <div class="text">自行檢驗</div>
+            </ul>
+            <ul>
+              <div class="title">檢測項目</div>
+              <div class="text">農藥快篩</div>
+              <div class="title">檢測單位</div>
+              <a class="text" target="_blank" href="https://global.turingcerts.com/en/co/cert?hash=e267d9b50b0c2b6e12be27e290c25fcdaaa8da169f1af533c5a0478f5bff8ab1">區塊鏈報告</a>
+            </ul>
+          </div>
+          <div class="btn-expand">
+            <p>查看更多</p>
+            <img src="/source/icon/Vector.svg" alt="">
+          </div> 
+        </div>
+      </container>      
+      <!-- 評論功能 -->
+      <div class="tilte-section">
+        <h3>評論功能</h3>
+      </div> 
+      <div class="comments-edit">
+        <img src="https://picsum.photos/60" class="circle" alt="">
+        <div class="edit">
+            <div class="container">
+                <p>Account</p>
+                <div class="star-widget">
+                    <input type="radio" name="rate" id="rate-1">
+                    <label for="rate-1" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2">
+                    <label for="rate-2" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3">
+                    <label for="rate-3" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4">
+                    <label for="rate-4" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-5">
+                    <label for="rate-5" class="fas fa-star"></label>
+                </div>
+                <div class="textarea">
+                    <textarea name="" id="textarea" cols="100%" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="btn-section">
+              <button class="btn-outlineSmall">取消</button>
+              <button class="btn-small">送出</button>
+            </div>
+        </div>    
+      </div>
+      <div class="comments-section">
+        <div class="account">
+          <img src="https://picsum.photos/35" class="circle" alt="">
+          <p>Account</p>
+        </div>
+        <div class="rate-data">
+            <div class="star">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+            </div>
+            <p>2022/11/01</p>    
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh urna cras nunc odio turpis feugiat. Imperdiet faucibus nulla dolor in volutpat egestas nulla vitae.</p>
+      </div>
+      <div class="btn-expand">
+        <p>查看更多</p>
+        <img src="/source/icon/Vector.svg" alt="">
+      </div> 
+    </div>
+    <div class="content-right">
+      <div class="tilte-section">
+        <h3>品牌</h3>
+      </div> 
+      <div class="vendor-section">
+        <img src="https://picsum.photos/60" class="circle" alt="" >
+        <div class="text">
+          <span>
+            <p>鳳梨果醬</p>
+            <img src="./source/icon/external-link.svg" alt="">
+          </span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh urna cras nunc odio turpis feugiat. Imperdiet faucibus nulla dolor in volutpat egestas nulla vitae. Molestie suspendisse at at sed varius et urna. Dolor massa in odio porta cursus faucibus egestas at tincidunt.
+            Dolor massa in odio porta cursus faucibus egestas at tincidunt.
+            Dolor massa in odio porta cursus faucibus egestas at tincidunt.</p>
+        </div>
+      </div>
+      <div class="tilte-section">
+        <h3>合作廠商</h3>
+      </div> 
+      <div class="vendor-section">
+        <img src="https://picsum.photos/60" class="circle" alt="" >
+        <div class="text">
+          <span>
+            <p>鳳梨果醬</p>
+            <img src="./source/icon/external-link.svg" alt="">
+          </span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh urna cras nunc odio turpis feugiat. Imperdiet faucibus nulla dolor in volutpat egestas nulla vitae. Molestie suspendisse at at sed varius et urna. Dolor massa in odio porta cursus faucibus egestas at tincidunt.
+            Dolor massa in odio porta cursus faucibus egestas at tincidunt.
+            Dolor massa in odio porta cursus faucibus egestas at tincidunt.</p>
+        </div>
+      </div>
+      <div class="tilte-section">
+        <h3>認證標章</h3>
+      </div> 
+      <div class="vendor-section">
+        <img src="https://picsum.photos/60" class="circle" alt="" >
+        <img src="https://picsum.photos/60" class="circle" alt="" >
+        <img src="https://picsum.photos/60" class="circle" alt="" >
+        <img src="https://picsum.photos/60" class="circle" alt="" >
+      </div> 
+      <div class="tilte-section">
+        <h3>下載專區</h3>
+      </div> 
+      <div class="vendor-section-btn">
+        <div class="btn-outline">
+          <img src="./source/icon/download.svg" alt="">
+          <p>產品條碼貼紙</p>
+        </div> 
+        <div class="btn-outline">  
+          <img src="./source/icon/download.svg" alt="">
+          <p>檢驗報告證書</p>
+        </div> 
+      </div> 
+    </div>
+  </div>
+</body>
+<!-- switch-btn -->
+<script src="/function/switch-button/switch-btn.js"></script>
+<!-- footer -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-content-list">
+      <li class="title">檢驗服務</li>
+      <li>檢驗服務</li>
+      <li>檢驗服務</li>
+      <li></li>
+    </div>
+    <div class="footer-content-list">
+      <li class="title">檢驗服務</li>
+      <li>檢驗服務</li>
+      <li>檢驗服務</li>
+      <li></li>
+    </div>
+    <div class="footer-content-list">
+      <li class="title">檢驗服務</li>
+      <li>檢驗服務</li>
+      <li>檢驗服務</li>
+      <li></li>
+    </div>
+    <div class="footer-content-list">
+      <li class="title">檢驗服務</li>
+      <li>檢驗服務</li>
+      <li>檢驗服務</li>
+      <li></li>
+    </div>
+    <div class="footer-content-contact">
+      <li class="title">檢驗服務</li>
+      <li>No. 131, Zhongzheng Rd., Wufeng Dist., Taichung City 413008 , Taiwan (R.O.C.)</li>
+      <li>Mon.-Fri｜09:00-18:00<br>Sat.-Sun｜09:00-12:00</li>
+    </div>
+  </div>
+  <div class="footer-bottom"> 
+    <div class="logo">
+      <a href="/index.html"><img src="/source/icon/logo_footer.svg" alt=""></a>
+      <img src="./source/Line 24.svg" alt="">
+      <p>Leaders of Pesticide testing</p>    
+    </div>
+    <div class="mark">
+      <a href="">Accessibility</a>
+      <a href="">Accessibility</a>
+      <a href="">Accessibility</a>
+    </div>
+  </div>
+</footer>
+</html>

@@ -1,0 +1,5 @@
+@import "./node_modules/bootstrap/scss/functions"; // 必要的方法
+@import "./variables"; // 自行定義的變數路徑
+@import "./node_modules/bootstrap/scss/mixins";
+
+@import "./node_modules/bootstrap/scss/bootstrap"; // Bootstrap 完整原始碼
