@@ -107,6 +107,7 @@ nav{
 
 .product-info-title{
     color: #878787;
+    min-width: 54px;
 }
 
 .product-info-text{
@@ -122,8 +123,10 @@ nav{
     gap: 25px;
 }
 
-.product-info-text p{
-    min-width: 54px;
+.product-info-text li > span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 /* product-btn */
@@ -238,6 +241,12 @@ nav{
     display: flex;
     gap: 20px;
     padding: 0px 0px 0px 0px;
+}
+
+.vendor-section .text{
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
 }
 
 .vendor-section .circle{

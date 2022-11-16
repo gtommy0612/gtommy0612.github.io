@@ -3,7 +3,7 @@ const toggleBtnRight = document.getElementsByClassName('toggle-btn-right');
 const toggleBtnLeft = document.getElementsByClassName('toggle-btn-left');
 
 function leftClick() {
-	btn.style.left = '0px'
+	btn.style.Color = '#000'
 }
 
 function rightClick() {
