@@ -6,34 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>農藥區塊鍊智慧平台</title>
     <link rel="icon" href="/source/icon/logo_title.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/search.css">
-    <link rel="stylesheet" href="./css/product.css">
-    <link rel="stylesheet" href="/css/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 </head>
 
 <body>
 <!-- header -->
-<header> 
-  <div class="header">
-    <a href="/index.html"><img src="/source/icon/logo_header.svg" alt="wumato"></a>
-    <div class="header-menu">
-      <nav class="menu">
-        <li><a href="/search.html">查詢頁面</a></li>
-        <li><a href="">檢驗服務</a></li>
-        <li><a href="">新聞快訊</a></li>
-        <li><a href="">聯絡我們</a></li>
-      </nav> 
-      <input id="nav-toggle" type="checkbox">
-      <label for="nav-toggle" class="ham">
-        <div class="ham-origin">
-          <div class="ham-bar ham-bar--top"></div>
-          <div class="ham-bar ham-bar--middle"></div>
-          <div class="ham-bar ham-bar--bottom"></div>
-        </div>
-      </label>
-    </div>
-  </div>
-</header>
+  <header>
+    <div>
+        <nav>
+            <a href="/index.html"><img src="/source/icon/logo_header.svg" alt=""></a>
+            <input id="nav-toggle" type="checkbox" style="display: none;">
+            <label for="nav-toggle" class="ham">
+                <div class="ham-origin">
+                    <div class="ham-bar ham-bar--top"></div>
+                    <div class="ham-bar ham-bar--middle"></div>
+                    <div class="ham-bar ham-bar--bottom"></div>
+                </div>
+            </label>
+            <ul class="menu" style="margin-bottom: 0px;">
+                <li><a href="##"></a></li>
+                <li><a href="/search.html">查詢頁面</a></li>
+                <li><a href="/product.html">檢驗服務</a></li>
+                <li><a href="##">新聞快訊</a></li>
+                <li><a href="##">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </div> 
+  </header>
 
 <!-- search -->
 <div class="search">
@@ -48,7 +49,7 @@
   <div class="search-nav">
     <div class="search-section">
       <input class="searchbox" type="text" placeholder="試試輸入品項關鍵字....">
-      <input class="btn" type="button" value="搜尋">    
+      <input class="btn-search" type="button" value="搜尋">    
     </div>
     <div class="nav-menu">
       <li>all</li>
@@ -62,9 +63,9 @@
 </div>
 
 <!-- form -->
-<div class="formSection">
-  <table class="table"> -->
-    <thead>
+<div class="table-responsive">
+  <table class="table">
+    <thead class="table-light">
       <tr>
         <th scope="col">#</th>
         <th scope="col">First</th>
@@ -91,11 +92,29 @@
         <td>@twitter</td>
       </tr>
     </tbody>
-  </table> -->
+  </table>
 </div>
 
-
+<!-- page-nav -->
+<nav aria-label="Page navigation example" class="page-nav" style="gap: 0px;">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 </body>
+
 <!-- footer -->
 <footer>
   <div class="footer-content">
@@ -133,9 +152,9 @@
     <div class="logo">
       <a href="/index.html"><img src="/source/icon/logo_footer.svg" alt=""></a>
       <img src="./source/Line 24.svg" alt="">
-      <p>Leaders of Pesticide testing</p>    
+      <p style="margin-bottom: 0px;">Leaders of Pesticide testing</p>    
     </div>
-    <div class="mark">
+    <div class="mark" style="background-color: #333333;">
       <a href="">Accessibility</a>
       <a href="">Accessibility</a>
       <a href="">Accessibility</a>

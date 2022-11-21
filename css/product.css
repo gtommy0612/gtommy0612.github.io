@@ -3,7 +3,7 @@
 @import url(/css/component.css);
 @import url(/function/switch-button/switch-btn.css);
 @import url(/function/star-rating/starRate.css);
-/* @import url(/function/ham-nav.css); */
+@import url(/function/ham-nav.css);
 
 body, h1, h3, p{
     margin: 0;
@@ -50,10 +50,10 @@ header{
     display: none;
 }
 
-nav{
+/* nav{
     display: flex;
     gap: 30px;
-}
+} */
 
 /* category */
 .category{
@@ -107,7 +107,7 @@ nav{
 
 .product-info-title{
     color: #878787;
-    min-width: 54px;
+    min-width: 120px;
 }
 
 .product-info-text{
@@ -127,6 +127,41 @@ nav{
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+/* tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgb(130, 130, 130);
+    color: #fff;
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 25px;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    font-size: 0.75rem;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 100%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
 
 /* product-btn */
@@ -335,9 +370,9 @@ footer{
         padding: 14px 16px;
     }
 
-    .menu{
-        display: none;
-    }
+    /* .menu{
+        display:none; 
+    } */
 
     .ham {
         width: 40px;
@@ -444,5 +479,4 @@ footer{
     .btn-outlineSmall{
         width:100%;
     }
-
 }

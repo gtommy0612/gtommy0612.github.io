@@ -69,7 +69,7 @@
 
 .search input{
     width: 100%;
-    height: 25px;
+    height: 47px;
     padding: 10px 0px 10px 20px;
     /* border: 1px solid #F78F1E;
     border-right: none; */
@@ -130,8 +130,40 @@
     margin-bottom: 100px;
 }
 
-.item01 div{
+.issue img{
+    width: 100%;
+    height: auto;
+}
+
+/* item-section */
+.item01-img{
+    flex-basis: 715px;
+    flex-shrink: 1;
+}
+
+.item01-info{
     flex-basis: 300px;
+    flex-shrink: 1;
+}
+
+.item02-img{
+    flex-basis: 645px;
+    flex-shrink: 1;
+}
+
+.item02-info{
+    flex-basis: 360px;
+    flex-shrink: 1;
+}
+
+.item03-img{
+    flex-basis: 580px;
+    flex-shrink: 1;
+}
+
+.item03-info{
+    flex-basis: 430px;
+    flex-shrink: 1;
 }
 
 /* content */
@@ -173,4 +205,108 @@
     padding: 50px 0px;
     background-color: #FAFAFA;
     color: #F78F1E;
+}
+
+/* *************************************************** */
+/* *************************************************** */
+@media screen and (max-width : 1024px ){
+
+    .issue .subtitle,
+    h3,
+    .product-info-title{
+        font-size: 1rem;
+    }
+
+    .hero-section h1{
+        font-size: 20px;
+    }
+
+    .issue h2,
+    .contact h2,
+    .news h2,
+    .products h2{
+        font-size: 18px;
+    }
+
+    p,
+    .searchTerm,
+    .btn,
+    .btn-outline{
+        font-size: 0.875rem;
+    }
+
+    /* padding setting */
+    .hero-section,
+    .issue > div{
+        padding: 0px 16px;
+    }
+
+    .hero-section{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+    }
+
+    .hero-section > div{
+        margin-top: 25px ;
+        gap: 0px;
+    }
+
+    .contact{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .news,
+    .products{
+        margin-bottom: 50px;
+    }
+
+    /* search */
+    .wrap{
+        width: 280px;
+    }
+
+    .searchTerm{
+        width: 80px;
+    }
+
+    /* btn setting */
+    .btn-section .btn-outlineSmall{
+        display: none;
+    }
+
+    /* issue & item */
+    .item01,.item03{
+        flex-direction: column;
+    }
+
+    .item02{
+        flex-direction: column-reverse;
+    }
+
+    .item01 > div,
+    .item02 > div,
+    .item03 > div{
+        flex-basis: 0px;
+    }
+
+    .item03-info .content{
+        margin-bottom: 30px;
+    }
+
+    .issue > div{
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+
+
+    /* item-section */
+    .items-section{
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+    
 }

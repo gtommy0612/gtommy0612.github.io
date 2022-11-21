@@ -1,139 +1,163 @@
-/*
-=====
-DEPENDENCES
-=====
-*/
+#full-stars-example {
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  /* make hover effect work properly in IE */
+  /* hide radio inputs */
+  /* set icon padding and size */
+  /* set default star color */
+  /* set color of none icon when unchecked */
+  /* if none icon is checked, make it red */
+  /* if any input is checked, make its following siblings grey */
+  /* make all stars orange on rating group hover */
+  /* make hovered input's following siblings grey on hover */
+  /* make none icon grey on rating group hover */
+  /* make none icon red on hover */
+}
+#full-stars-example .rating-group {
+  display: inline-flex;
+}
+#full-stars-example .rating__icon {
+  pointer-events: none;
+}
+#full-stars-example .rating__input {
+  position: absolute !important;
+  left: -9999px !important;
+}
+#full-stars-example .rating__label {
+  cursor: pointer;
+  padding: 0 0.1em;
+  font-size: 2rem;
+}
+#full-stars-example .rating__icon--star {
+  color: orange;
+}
+#full-stars-example .rating__icon--none {
+  color: #eee;
+}
+#full-stars-example .rating__input--none:checked + .rating__label .rating__icon--none {
+  color: red;
+}
+#full-stars-example .rating__input:checked ~ .rating__label .rating__icon--star {
+  color: #ddd;
+}
+#full-stars-example .rating-group:hover .rating__label .rating__icon--star {
+  color: orange;
+}
+#full-stars-example .rating__input:hover ~ .rating__label .rating__icon--star {
+  color: #ddd;
+}
+#full-stars-example .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+  color: #eee;
+}
+#full-stars-example .rating__input--none:hover + .rating__label .rating__icon--none {
+  color: red;
+}
 
-.screen-reader{
-    width: var(--screenReaderWidth, 1px) !important;
-    height: var(--screenReaderHeight, 1px) !important;
-    padding: var(--screenReaderPadding, 0) !important;
-    border: var(--screenReaderBorder, none) !important;
-  
-    position: var(--screenReaderPosition, absolute) !important;
-    clip: var(--screenReaderClip, rect(1px, 1px, 1px, 1px)) !important;
-    overflow: var(--screenReaderOverflow, hidden) !important;
-  }
-  
-  /*
-  =====
-  CORE STYLES
-  =====
-  */
-  
-  .rating{
-    --uiRatingColor: var(--ratingColor, #eee);
-    --uiRatingColorActive: var(--ratingColorActive, #ffcc00);
-  
-    display: var(--ratingDisplay, flex);
-    font-size: var(--ratingSize, 1rem);
-    color: var(--uiRatingColor);
-  }
-      
-  .rating__control:nth-of-type(1):focus ~ .rating__item:nth-of-type(1)::before,
-  .rating__control:nth-of-type(2):focus ~ .rating__item:nth-of-type(2)::before,
-  .rating__control:nth-of-type(3):focus ~ .rating__item:nth-of-type(3)::before,
-  .rating__control:nth-of-type(4):focus ~ .rating__item:nth-of-type(4)::before,
-  .rating__control:nth-of-type(5):focus ~ .rating__item:nth-of-type(5)::before{
-    content: ""; 
-    box-shadow: 0 0 0 var(--ratingOutlineWidth, 4px) var(--uiRatingColorActive);
-  
-    position: absolute;
-    top: -.15em;
-    right: 0;
-    bottom: -.15em;
-    left: 0;
-    z-index: -1;
-  }
-  
-  .rating__item{
-    cursor: pointer;  
-    position: relative;
-  }
-  
-  .rating__item{
-    padding-left: .25em;
-    padding-right: .25em;
-  }
-  
-  .rating__star{
-    display: block;
-    width: 24px;
-    height: 24px;
-  
-    fill: currentColor;
-    stroke: var(--ratingStroke, #D9D9D9);
-    stroke-width: var(--ratingStrokeWidth, 1px);
-  }
-  
-  .rating:hover,
-  .rating__control:nth-of-type(1):checked ~ .rating__item:nth-of-type(1),
-  .rating__control:nth-of-type(2):checked ~ .rating__item:nth-of-type(-n+2),
-  .rating__control:nth-of-type(3):checked ~ .rating__item:nth-of-type(-n+3),
-  .rating__control:nth-of-type(4):checked ~ .rating__item:nth-of-type(-n+4),
-  .rating__control:nth-of-type(5):checked ~ .rating__item:nth-of-type(-n+5){
-    color: var(--uiRatingColorActive);
-  }
-  
-  .rating__item:hover ~ .rating__item{
-    color: var(--uiRatingColor);
-  }
-  
-  /*
-  =====
-  SETTINGS
-  =====
-  */
-  
-  .rating{
-    --ratingSize: 2rem;
-    --ratingColor: #eee;
-    --ratingColorActive: #ffcc00;
-  }
-  
-  /*
-  =====
-  DEMO
-  =====
-  */
-  
-  body{
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
-    font-size: 1rem;
-    margin: 0;
-  }
-  
-  .page{
-    min-height: 100vh;
-    display: flex;
-  }
-  
-  .page__demo{
-    margin: auto;  
-  }
-  
-  .page__group{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  
-  .page__hint{
-    display: block;
-    font-weight: 700;
-    margin-top: 1rem;
-  }
-  
-  @media (min-width: 641px){
-    .page__demo{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-    .page__group{
-      margin-left: 3.5rem;
-      margin-right: 3.5rem;
-    }
-  }
-  
+#half-stars-example {
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  /* make hover effect work properly in IE */
+  /* hide radio inputs */
+  /* set icon padding and size */
+  /* add padding and positioning to half star labels */
+  /* set default star color */
+  /* set color of none icon when unchecked */
+  /* if none icon is checked, make it red */
+  /* if any input is checked, make its following siblings grey */
+  /* make all stars orange on rating group hover */
+  /* make hovered input's following siblings grey on hover */
+  /* make none icon grey on rating group hover */
+  /* make none icon red on hover */
+}
+#half-stars-example .rating-group {
+  display: inline-flex;
+}
+#half-stars-example .rating__icon {
+  pointer-events: none;
+}
+#half-stars-example .rating__input {
+  position: absolute !important;
+  left: -9999px !important;
+}
+#half-stars-example .rating__label {
+  cursor: pointer;
+  /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+  padding: 0 0.1em;
+  font-size: 2rem;
+}
+#half-stars-example .rating__label--half {
+  padding-right: 0;
+  margin-right: -0.6em;
+  z-index: 2;
+}
+#half-stars-example .rating__icon--star {
+  color: orange;
+}
+#half-stars-example .rating__icon--none {
+  color: #eee;
+}
+#half-stars-example .rating__input--none:checked + .rating__label .rating__icon--none {
+  color: red;
+}
+#half-stars-example .rating__input:checked ~ .rating__label .rating__icon--star {
+  color: #ddd;
+}
+#half-stars-example .rating-group:hover .rating__label .rating__icon--star,
+#half-stars-example .rating-group:hover .rating__label--half .rating__icon--star {
+  color: orange;
+}
+#half-stars-example .rating__input:hover ~ .rating__label .rating__icon--star,
+#half-stars-example .rating__input:hover ~ .rating__label--half .rating__icon--star {
+  color: #ddd;
+}
+#half-stars-example .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+  color: #eee;
+}
+#half-stars-example .rating__input--none:hover + .rating__label .rating__icon--none {
+  color: red;
+}
+
+#full-stars-example-two {
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  /* make hover effect work properly in IE */
+  /* hide radio inputs */
+  /* hide 'none' input from screenreaders */
+  /* set icon padding and size */
+  /* set default star color */
+  /* if any input is checked, make its following siblings grey */
+  /* make all stars orange on rating group hover */
+  /* make hovered input's following siblings grey on hover */
+}
+#full-stars-example-two .rating-group {
+  display: inline-flex;
+}
+#full-stars-example-two .rating__icon {
+  pointer-events: none;
+}
+#full-stars-example-two .rating__input {
+  position: absolute !important;
+  left: -9999px !important;
+}
+#full-stars-example-two .rating__input--none {
+  display: none;
+}
+#full-stars-example-two .rating__label {
+  cursor: pointer;
+  padding: 0 0.1em;
+  font-size: 2rem;
+}
+#full-stars-example-two .rating__icon--star {
+  color: orange;
+}
+#full-stars-example-two .rating__input:checked ~ .rating__label .rating__icon--star {
+  color: #ddd;
+}
+#full-stars-example-two .rating-group:hover .rating__label .rating__icon--star {
+  color: orange;
+}
+#full-stars-example-two .rating__input:hover ~ .rating__label .rating__icon--star {
+  color: #ddd;
+}
+
+body {
+  padding: 1rem;
+  text-align: center;
+}/*# sourceMappingURL=star-rating.css.map */
