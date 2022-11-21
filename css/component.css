@@ -140,12 +140,14 @@ button{
 
 /* btn-varient */
 .btn:hover,
-.btn-small:hover{
+.btn-small:hover,
+.btn-search:hover{
     background-color: rgb(247, 142, 30, 0.8);
 }
 
 .btn:active,
-.btn-small:active{
+.btn-small:active,
+.btn-search:active{
     background-color: rgb(247, 142, 30);
 }
 
