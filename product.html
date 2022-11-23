@@ -6,9 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>農藥區塊鍊智慧平台</title>
     <link rel="icon" href="/source/icon/logo_title.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="css/product.css">
 </head>
+<!-- commentsFuntion -->
+<script>
+	function sendMessage(){
+
+		var content=document.getElementById('messageContent').value;
+		var messageBox = document.getElementById("messageBox");
+    var starStr='<span class="fas fa-star"></span>';
+    var stars='';
+    var starCount='';
+    var starId='';
+
+    for(var i=1;i<6;i++){
+      starId='rate-'+i;
+      if(document.getElementById(starId).checked==true){
+        starCount=i;
+        document.getElementById(starId).checked=false;
+        break;
+      }
+    }
+    for(var i=0;i<starCount;i++){
+      stars+=starStr;
+    }
+    
+		if(content){
+      
+			var oTime = document.createElement("div");
+			oTime.className = "messagebox";
+      
+      var myDate = new  Date();
+			oTime.innerHTML = '<BR>'+
+        '<div class="account"><img src="https://picsum.photos/35" class="circle"><p>Account</p></div>'+
+        '<div class="rate-data">'+'<div class="star">'+stars+'<p>'+myDate.toLocaleString()+'</div>'+'</div>'+
+        content;
+			
+      messageBox.appendChild(oTime);
+		}	
+	}
+	
+</script>
+
 <body>
   <!-- header -->
   <header>
@@ -85,9 +125,9 @@
               <span class="tooltiptext">檢測計畫達成率：時間區間內廠商實際抽驗數除以預計抽驗數。
                 <br>
                 <br>
-                實際抽驗數：17、預計抽驗數：20
+                實際抽驗數：20、預計抽驗數：20
                 <br>
-                8月達成率：85%  
+                達成率：100%  
               </span>
             </div>
           </span>
@@ -97,7 +137,7 @@
         <div class="product-btn">
           <a href="https://shop.sunnyhills.com.tw/index#newpackage" target="_blank">
             <div class="btn">
-                <img src="./source/icon/shopping-cart.svg" alt="">
+              <img src="./source/icon/shopping-cart.svg" alt="">
               <p>立即購買</p>
             </div>
           </a>
@@ -188,29 +228,29 @@
         <div class="edit">
             <div class="container">
                 <p>Account</p>
-                <div class="star-widget">
+                <div class="star-widget" >
                     <input type="radio" name="rate" id="rate-1">
-                    <label for="rate-1" class="fas fa-star"></label>
+                    <label for="rate-5" class="fas fa-star"></label>
                     <input type="radio" name="rate" id="rate-2">
-                    <label for="rate-2" class="fas fa-star"></label>
+                    <label for="rate-4" class="fas fa-star"></label>
                     <input type="radio" name="rate" id="rate-3">
                     <label for="rate-3" class="fas fa-star"></label>
                     <input type="radio" name="rate" id="rate-4">
-                    <label for="rate-4" class="fas fa-star"></label>
+                    <label for="rate-2" class="fas fa-star"></label>
                     <input type="radio" name="rate" id="rate-5">
-                    <label for="rate-5" class="fas fa-star"></label>
+                    <label for="rate-1" class="fas fa-star"></label>
                 </div>
                 <div class="textarea">
-                    <textarea name="" id="textarea" cols="100%" rows="10"></textarea>
+                    <textarea name="" id="messageContent" cols="100%" rows="10"></textarea>
                 </div>
             </div>
             <div class="btn-section">
-              <button class="btn-outlineSmall">取消</button>
-              <button class="btn-small">送出</button>
+              <button id="cancelMessage" class="btn-outlineSmall">取消</button>
+              <button id="sendMessage" class="btn-small" onclick="sendMessage()">送出</button>
             </div>
         </div>    
       </div>
-      <div class="comments-section">
+      <div class="comments-section" id='messageBox'>
         <div class="account">
           <img src="https://picsum.photos/35" class="circle" alt="">
           <p>Account</p>
@@ -267,10 +307,10 @@
         <h3>認證標章</h3>
       </div> 
       <div class="vendor-section">
-        <img src="/source/icon/logo/TAP.png" class="circle" alt="" >
-        <img src="/source/icon/logo/CAS.jpeg" class="circle" alt="" >
-        <img src="/source/icon/logo/GOOD.svg" class="circle" alt="" >
-        <img src="/source/icon/logo/SGS.svg" class="" alt="" >
+        <!-- <img src="/source/icon/logo/TAP.png" class="circle" alt="" > -->
+        <img src="/source/icon/logo/wumaito.png" class="circle" alt="" >
+        <!-- <img src="/source/icon/logo/GOOD.svg" class="circle" alt="" >
+        <img src="/source/icon/logo/SGS.svg" class="" alt="" > -->
       </div> 
       <!-- <div class="tilte-section">
         <h3>下載專區</h3>
@@ -293,9 +333,9 @@
 <footer>
   <div class="footer-content">
     <div class="footer-content-list">
-      <li class="title">檢驗服務</li>
-      <li>檢驗服務</li>
-      <li>檢驗服務</li>
+      <li class="title">平台主頁</li>
+      <li>認識農藥快篩</li>
+      <li>關於我們</li>
       <li></li>
     </div>
     <div class="footer-content-list">
@@ -306,20 +346,40 @@
     </div>
     <div class="footer-content-list">
       <li class="title">檢驗服務</li>
-      <li>檢驗服務</li>
-      <li>檢驗服務</li>
+      <li>服務介紹</li>
+      <li>取得報價</li>
       <li></li>
     </div>
     <div class="footer-content-list">
-      <li class="title">檢驗服務</li>
-      <li>檢驗服務</li>
-      <li>檢驗服務</li>
+      <li class="title">新聞快訊</li>
+      <li>市場消息</li>
+      <li>法規新知</li>
       <li></li>
     </div>
     <div class="footer-content-contact">
-      <li class="title">檢驗服務</li>
-      <li>No. 131, Zhongzheng Rd., Wufeng Dist., Taichung City 413008 , Taiwan (R.O.C.)</li>
-      <li>Mon.-Fri｜09:00-18:00<br>Sat.-Sun｜09:00-12:00</li>
+      <li class="title">聯絡我們</li>
+      <a href="https://goo.gl/maps/GbxCz6miYKuhV1SS8">
+        <ul>
+          <i class="fas fa-map-marker-alt"></i>
+          <li >41361台中市霧峰區中正路131號(後棟)</li>
+        </ul>  
+      </a>
+      <ul>
+        <li class="fas fa-calendar-alt"></li>
+        <li>Mon.-Fri｜08:00-17:00</li>
+      </ul>
+      <a href="tel:+886423317859">
+        <ul>
+          <li class="fas fa-phone-alt"></li>        
+          <li>04-2331-7859</li>
+        </ul>
+      </a>
+      <a href="mailto:ping@wumaito.com">
+        <ul>
+          <li class="fas fa-envelope"></li>
+          <li>ping@wumaito.com</li>
+        </ul>
+      </a>
     </div>
   </div>
   <div class="footer-bottom"> 
@@ -336,3 +396,5 @@
   </div>
 </footer>
 </html>
+
+

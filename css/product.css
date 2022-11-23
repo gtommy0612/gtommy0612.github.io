@@ -239,7 +239,22 @@ header{
 /* comments */
 .comments-edit{
     width: auto;
+}
 
+.messagebox{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.star{
+    display: flex;
+    align-items: center;
+    gap:2px;
+}
+
+.star p{
+    padding-left: 8px;
 }
 
 /* content-right */
@@ -318,6 +333,16 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.footer-content-contact ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content-contact a{
+    font-size: 1rem;    
 }
 
 .footer-bottom{
