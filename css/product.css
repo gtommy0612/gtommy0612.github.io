@@ -37,6 +37,11 @@ header{
     padding: 14px 120px;
 }
 
+header img{
+    width: 190px;
+    height: auto;
+}
+
 .logo{
     align-self: flex-end;
 }
