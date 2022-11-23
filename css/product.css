@@ -246,16 +246,25 @@ header img{
     width: auto;
 }
 
+#messageContent{
+    padding: 5px;
+    font-size: 16px;
+}
+
 .messagebox{
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.star{
+.star {
     display: flex;
     align-items: center;
     gap:2px;
+}
+
+.star span{
+    color: #F78F1E;
 }
 
 .star p{
