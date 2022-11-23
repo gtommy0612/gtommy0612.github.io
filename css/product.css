@@ -504,4 +504,12 @@ footer{
     .btn-outlineSmall{
         width:100%;
     }
+
+    #start{
+        width: 250px;
+    }
+
+    #searchMonth{
+        width: 60px;
+    }
 }

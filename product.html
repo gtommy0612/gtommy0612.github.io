@@ -20,6 +20,7 @@
     var starCount='';
     var starId='';
 
+    // for(var i=1;i<6;i++){
     for(var i=1;i<6;i++){
       starId='rate-'+i;
       if(document.getElementById(starId).checked==true){
@@ -28,7 +29,7 @@
         break;
       }
     }
-    for(var i=0;i<starCount;i++){
+    for(var i=0; i<starCount; i++){
       stars+=starStr;
     }
     
@@ -162,8 +163,8 @@
         <!-- <div id="btn"></div> -->
         <!-- <button type="button" class="toggle-btn-left" onclick="leftClick()">當月</button>
         <button type="button" class="toggle-btn-right" onclick="rightClick()">當年</button> -->
-        <button type="button" class="toggle-btn-left" onclick="leftClick()">當月</button>
-        <button type="button" class="toggle-btn-right" onclick="rightClick()">當年</button>
+        <input type="month" id="start" name="start" min="2018-03" value="2018-05">
+        <button id="searchMonth" class="btn-small" onclick="searchMonth()">搜尋</button>
       </div>
       <container class="pesticide-section">
         <div class="pesticide-month"><h3>09月</h3></div>
@@ -229,15 +230,15 @@
             <div class="container">
                 <p>Account</p>
                 <div class="star-widget" >
-                    <input type="radio" name="rate" id="rate-1">
+                    <input type="radio" name="rate" id="rate-5">
                     <label for="rate-5" class="fas fa-star"></label>
-                    <input type="radio" name="rate" id="rate-2">
+                    <input type="radio" name="rate" id="rate-4">
                     <label for="rate-4" class="fas fa-star"></label>
                     <input type="radio" name="rate" id="rate-3">
                     <label for="rate-3" class="fas fa-star"></label>
-                    <input type="radio" name="rate" id="rate-4">
+                    <input type="radio" name="rate" id="rate-2">
                     <label for="rate-2" class="fas fa-star"></label>
-                    <input type="radio" name="rate" id="rate-5">
+                    <input type="radio" name="rate" id="rate-1">
                     <label for="rate-1" class="fas fa-star"></label>
                 </div>
                 <div class="textarea">
