@@ -1,0 +1,80 @@
+// Customize your CSS style here
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+.hero-background {
+    background-image: url('/img/Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-background {
+    background-image: url('/assets/images/Banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// column with 16px padding 
+.custom-gutter {
+  --bs-gutter-x: 1em !important;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+// Navbar
+@media (max-width: 992px) {
+  .navbar-nav, .last{
+    margin-top: 1rem !important;
+  }  
+  .nav-item{
+    text-align: center;
+  }
+  .nav-link{
+    padding: 1rem 0rem !important;
+  }
+}
+
+/* 頁面淡入 */
+body.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* 頁面淡出 */
+body.fade-out {
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+
+// flickity component: https://css-tricks.com/creating-responsive-touch-friendly-carousels-with-flickity/
+.flickity-page-dots{
+    display: none !important;
+}
+
+.gallery-cell {
+  height: 300px;
+  margin-left: 1em;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+
+
+// Required import bootstrap file
+@import "../node_modules/bootstrap/scss/functions"; // 必要的方法
+@import "../node_modules/bootstrap/scss/mixins";
+@import "variables"; // Mainly edit here
+@import "../node_modules/bootstrap/scss/bootstrap"; // Bootstrap 完整原始碼

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body>
+    <!-- Nav -->
+    <div id="Nav-placeholder"></div>
+    <script>
+    fetch("NavBar.html")
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById("Nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <!-- Hero -->
+    <div class="container-lg py-6">
+        <div class="d-flex flex-column gap-4 align-items-center">
+            <h1 style="font-size: 3.5em;">Tommy Chi</h1>
+            <h4 class="text-center">Im a Human Interface Designer currently working at Apple. <br> I love creating inclusive designs that empower people.</h4>
+            <span class="d-flex gap-3">
+                <a type="button" class="btn btn-light mr-3 d-flex flex-row gap-2" href="#">
+                    <span class="material-symbols-outlined">calendar_month</span>
+                    <p class="m-0">Have a chat</p>
+                </a>
+                <a class="btn btn-dark d-flex flex-row gap-2 justify-content-center" href="#">
+                    <span class="material-symbols-outlined">email</span>
+                    <p class="m-0">Contact</p>
+                </a>                
+            </span>             
+        </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="container-lg pb-5">
+        <h2 class="w-100 mb-3">Work Experience</h2>
+        <div class="row mb-3 d-flex gap-5 gap-md-0 custom-gutter">
+            <div class="col-12 col-md-4 custom-gutter d-none d-md-block" style="height: 12.5em"><img src="./assets/images/Background.png" alt="" class="w-100 h-100"></div>
+            <div class="col-12 col-md-8 custom-gutter" style="height: auto">
+                <h4>UI/UX Designer｜Logikco Company</h4>
+                <h6>2020-2021</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ut odit autem corporis officia vel nesciunt cupiditate natus amet id et, culpa placeat voluptatem ipsum, quidem voluptatum totam facere dolore?</p> 
+            </div>
+        </div>
+        <div class="row mb-3 d-flex gap-5 gap-md-0 custom-gutter">
+            <div class="col-12 col-md-4 custom-gutter d-none d-md-block" style="height: 12.5em"><img src="./assets/images/Background.png" alt="" class="w-100 h-100"></div>
+            <div class="col-12 col-md-8 custom-gutter" style="height: auto">
+                <h4>UI/UX Designer｜Logikco Company</h4>
+                <h6>2020-2021</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ut odit autem corporis officia vel nesciunt cupiditate natus amet id et, culpa placeat voluptatem ipsum, quidem voluptatum totam facere dolore?</p> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="container-lg pb-5">
+        <h2 class="w-100 mb-3">Education</h2>
+        <div class="row mb-3 d-flex gap-5 gap-md-0 custom-gutter">
+            <div class="col-12 col-md-4 custom-gutter d-none d-md-block" style="height: 12.5em"><img src="./assets/images/Background.png" alt="" class="w-100 h-100"></div>
+            <div class="col-12 col-md-8 custom-gutter" style="height: auto">
+                <h4>UI/UX Designer｜Logikco Company</h4>
+                <h6>2020-2021</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ut odit autem corporis officia vel nesciunt cupiditate natus amet id et, culpa placeat voluptatem ipsum, quidem voluptatum totam facere dolore?</p> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="container-fluid d-flex justify-content-center">
+        <img src="./assets/images/Banner.png" alt="" class="w-100" style="max-width: 1440px;">
+    </div>
+
+    <!-- CTA -->
+    <div class="container-fluid pb-6">
+        <div class="d-flex flex-column align-items-center gap-3">
+            <span>
+                <h1 class="text-center">Send me a message</h1>
+                <h2>gtommy0612@gmail.com</h2>
+            </span>
+            <span class="d-flex gap-3">
+                <button type="button" class="btn btn-light mr-3 d-flex flex-row gap-2">
+                    <span class="material-symbols-outlined">calendar_month</span>
+                    <p class="m-0">Have a chat</p>
+                </button>
+                <button class="btn btn-dark d-flex flex-row gap-2 justify-content-center" href="#">
+                    <span class="material-symbols-outlined">download</span>
+                    <p class="m-0">Resume</p>
+                </button>
+            </span>   
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <Footer id="footer-placeholder"></Footer>
+    <script>
+    fetch("Footer.html")
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+</body>
+
+
+
+<!-- JavaScript -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="/js/main.js"></script>
+
+</html>

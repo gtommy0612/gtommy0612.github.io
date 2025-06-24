@@ -2,228 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>農藥區塊鍊智慧平台</title>
-    <link rel="icon" href="/source/icon/logo_title.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/mainpage.css">
-    <link rel="stylesheet" href="./css/product.css">
-    <link rel="stylesheet" href="/css/fontawesome-free-6.2.0-web/css/all.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
-  <!-- header -->
-  <header>
-    <div>
-        <nav>
-          <a href="/index.html"><img src="/source/icon/logo/wumaito.svg" style="padding-top: 5px;"></a>
-          <input id="nav-toggle" type="checkbox" style="display: none;">
-            <label for="nav-toggle" class="ham">
-                <div class="ham-origin">
-                    <div class="ham-bar ham-bar--top"></div>
-                    <div class="ham-bar ham-bar--middle"></div>
-                    <div class="ham-bar ham-bar--bottom"></div>
-                </div>
-            </label>
-            <ul class="menu">
-                <li><a href="##"></a></li>
-                <li><a href="/search.html">查詢頁面</a></li>
-                <li><a href="/product.html">檢驗服務</a></li>
-                <li><a href="##">新聞快訊</a></li>
-                <li><a href="https://reurl.cc/rZ9ZeE" target="_blank">聯絡我們</a></li>
-            </ul>
-        </nav>
-    </div> 
-  </header>
+    <!-- Nav -->
+    <div id="Nav-placeholder"></div>
+    <script>
+    fetch("NavBar.html")
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById("Nav-placeholder").innerHTML = data;
+        });
+    </script>
 
-  <!-- hero-section -->
-  <div class="hero-section">
-    <h1>農藥快檢智慧平台<br>食品安全把關</h1>
-    <div>
-      <div class="wrap">
-        <div class="search">
-           <input type="text" class="searchTerm" placeholder="試試輸入品項關鍵字....">
+    <!-- Hero -->
+    <div class="container-lg py-6">
+        <div class="d-flex flex-column gap-4">
+            <h1 style="font-size: 3.5em;">Tommy Chi</h1>
+            <h2>Im a Human Interface Designer currently working at Apple. <br> I love creating inclusive designs that empower people.</h2>
+            <span class="d-flex gap-3">
+                <button type="button" class="btn btn-light mr-3 d-flex flex-row gap-2">
+                    <span class="material-symbols-outlined">calendar_month</span>
+                    <p class="m-0">Have a chat</p>
+                </button>
+                <button class="btn btn-dark d-flex flex-row gap-2 justify-content-center" href="#">
+                    <p class="m-0">About me</p>
+                </button>   
+            </span>             
         </div>
-        <a href="/product.html">
-          <button type="submit" class="searchButton">
-            <img src="/source/icon/search_white01.svg" alt="">        
-          </button>
-        </a>
-        </div>    
-      <div class="btn-section">
-        <li class="btn-outlineSmall">茶葉</li>
-        <li class="btn-outlineSmall">農產品</li>
-        <li class="btn-outlineSmall">巧克力</li>
-        <li class="btn-outlineSmall">鳳梨</li>
-        <li class="btn-outlineSmall">農產品</li>
-      </div>
     </div>
-  </div>
 
-  <!-- issue -->
-  <div class="issue">
-    <h2>什麼是農藥快篩？</h2>
-    <div class="item01" style="margin-top: 20px";>
-      <div class="item01-img">
-        <img src="https://picsum.photos/715/255" alt="">
-      </div>
-      <div class="item01-info">
-        <div class="subtitle">什麼是農藥快篩？</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus pellentesque vitae neque, feugiat donec varius ut pulvinar. Maecenas vitae at id sit non. Dis amet, commodo cras sed duis cursus eget ut nulla. Posuere pretium aliquam eu gravida eget nisi, massa aliquet.</p>
-      </div>
-    </div>
-    <div class="item02">
-      <div class="item02-info">
-        <div class="subtitle">什麼是農藥快篩？</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus pellentesque vitae neque, feugiat donec varius ut pulvinar. Maecenas vitae at id sit non. Dis amet, commodo cras sed duis cursus eget ut nulla. Posuere pretium aliquam eu gravida eget nisi, massa aliquet.</p>
-      </div>
-      <div class="item02-img">
-        <img src="https://picsum.photos/645/255" alt="">
-      </div>
-    </div>
-    <div class="item03">
-      <div class="item03-img">
-        <img src="https://picsum.photos/572/255" alt="">
-      </div>
-      <div class="item03-info">
-        <div class="content">
-          <div class="subtitle">什麼是農藥快篩？</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus pellentesque vitae neque, feugiat donec varius ut pulvinar. Maecenas vitae at id sit non. Dis amet, commodo cras sed duis cursus eget ut nulla. Posuere pretium aliquam eu gravida eget nisi, massa aliquet.</p>  
+    <!-- Work -->
+     <div class="container-lg pb-6">
+        <h2 class="w-100">Design Work</h2>
+        <div class="row mb-3 d-flex gap-3 gap-md-0 custom-gutter">
+            <div class="col-12 col-md-6 custom-gutter" style="height: 20em"><img src="./assets/images/Background.png" alt="" class="w-100 h-100"></div>
+            <div class="col-12 col-md-6 custom-gutter" style="height: 20em"><img src="./assets/images/Background.png" alt="" class="w-100 h-100"></div>
         </div>
-        <div class="btn-section">
-          <span class="btn">取得檢驗服務</span>
-          <span class="btn-outline">進入查詢頁面</span>
+        <div class="row mb-3 d-flex gap-3 gap-md-0 custom-gutter">
+            <div class="col-12 col-md-6 custom-gutter" style="height: 20em"><img src="./assets/images/Background.png" alt="" class="w-100 h-100"></div>
+            <div class="col-12 col-md-6 custom-gutter" style="height: 20em"><img src="./assets/images/Background.png" alt="" class="w-100 h-100"></div>
         </div>
-      </div>
-    </div>
-  </div>
+     </div>
 
-  <!-- content -->
-  <div class="news">
-    <h2>新聞快訊</h2>        
-    <div class="items-section">
-      <span style="margin-left: 16px;">
-        <img src="https://picsum.photos/280/233" alt="">      
-        <li class="attribute">重大新聞</li>
-        <p>May,15,2021</p>
-        <h3>2022 台北國際食品展</h3>
-      </span>
-      <span>
-        <img src="https://picsum.photos/280/233" alt="">      
-        <li class="attribute">重大新聞</li>
-        <p>May,15,2021</p>
-        <h3>2022 台北國際食品展</h3>
-      </span>
-      <span>
-        <img src="https://picsum.photos/280/233" alt="">      
-        <li class="attribute">重大新聞</li>
-        <p>May,15,2021</p>
-        <h3>2022 台北國際食品展</h3>
-      </span>
+    <!-- Witness -->
+    <div class="container-lg pb-6">
+        <h2>Words from My Collaborators</h2>
+        <div class="gallery js-flickity bg-dark"
+        data-flickity-options='{ "wrapAround": true }'>
+        <div class="gallery-cell"><img src="./assets/images/Background.png" alt="" class="w-100" style="height: 20em;"></div>
+        <div class="gallery-cell"><img src="./assets/images/Background.png" alt="" class="w-100" style="height: 20em;"></div>
+        <div class="gallery-cell"><img src="./assets/images/Background.png" alt="" class="w-100" style="height: 20em;"></div>
+        <div class="gallery-cell"><img src="./assets/images/Background.png" alt="" class="w-100" style="height: 20em;"></div>
+        <div class="gallery-cell"><img src="./assets/images/Background.png" alt="" class="w-100" style="height: 20em;"></div>
+        </div>
     </div>
-    <div class="btn-expand">
-      <p>查看更多</p>
-      <img src="/source/icon/Vector_right.svg" alt="">
-    </div>
-  </div>
-  <div class="products">
-    <h2>產品快照</h2>        
-    <div class="items-section">
-      <span style="margin-left: 16px;">
-        <img src="https://picsum.photos/280/233" alt="">      
-        <li class="attribute">農產品</li>
-        <p>微熱山丘</p>
-        <h3>微熱山丘鳳梨酥</h3>
-      </span>
-      <span>
-        <img src="https://picsum.photos/280/233" alt="">      
-        <li class="attribute">農產品</li>
-        <p>微熱山丘</p>
-        <h3>微熱山丘鳳梨酥</h3>
-      </span>
-      <span>
-        <img src="https://picsum.photos/280/233" alt="">      
-        <li class="attribute">農產品</li>
-        <p>微熱山丘</p>
-        <h3>微熱山丘鳳梨酥</h3>
-      </span>
-    </div>
-    <div class="btn-expand">
-      <p>查看更多</p>
-      <img src="/source/icon/Vector_right.svg" alt="">
-    </div>
-  </div>
 
-  <!-- contact -->
-  <div class="contact">
-    <h2>馬上取得專屬於我的檢驗報告！</h2>
-    <div class="btn-outline">諮詢檢驗服務</div>
-  </div>
+    <!-- CTA -->
+    <div class="container-fluid pb-6">
+        <div class="d-flex flex-column align-items-center gap-3">
+            <span>
+                <h1 class="text-center">Send me a message</h1>
+                <h2>gtommy0612@gmail.com</h2>
+            </span>
+            <span class="d-flex gap-3">
+                <button type="button" class="btn btn-light mr-3 d-flex flex-row gap-2">
+                    <span class="material-symbols-outlined">calendar_month</span>
+                    <p class="m-0">Have a chat</p>
+                </button>
+                <button class="btn btn-dark d-flex flex-row gap-2 justify-content-center" href="#">
+                    <span class="material-symbols-outlined">download</span>
+                    <p class="m-0">Resume</p>
+                </button>
+            </span>   
+        </div>
+    </div>
 
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+    fetch("Footer.html")
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
 </body>
-<!-- footer -->
-<footer>
-  <div class="footer-content">
-    <div class="footer-content-list">
-      <li class="title">平台主頁</li>
-      <li>認識農藥快篩</li>
-      <li>關於我們</li>
-      <li></li>
-    </div>
-    <div class="footer-content-list">
-      <li class="title">檢驗服務</li>
-      <li>檢驗服務</li>
-      <li>檢驗服務</li>
-      <li></li>
-    </div>
-    <div class="footer-content-list">
-      <li class="title">檢驗服務</li>
-      <li>服務介紹</li>
-      <li>取得報價</li>
-      <li></li>
-    </div>
-    <div class="footer-content-list">
-      <li class="title">新聞快訊</li>
-      <li>市場消息</li>
-      <li>法規新知</li>
-      <li></li>
-    </div>
-    <div class="footer-content-contact">
-      <li class="title">聯絡我們</li>
-      <a href="https://goo.gl/maps/GbxCz6miYKuhV1SS8">
-        <ul>
-          <i class="fas fa-map-marker-alt"></i>
-          <li >41361台中市霧峰區中正路131號(後棟)</li>
-        </ul>  
-      </a>
-      <ul>
-        <li class="fas fa-calendar-alt"></li>
-        <li>Mon.-Fri｜08:00-17:00</li>
-      </ul>
-      <a href="tel:+886423317859">
-        <ul>
-          <li class="fas fa-phone-alt"></li>        
-          <li>04-2331-7859</li>
-        </ul>
-      </a>
-      <a href="mailto:ping@wumaito.com">
-        <ul>
-          <li class="fas fa-envelope"></li>
-          <li>ping@wumaito.com</li>
-        </ul>
-      </a>
-    </div>
-  </div>
-  <div class="footer-bottom"> 
-    <div class="logo">
-      <a href="/index.html"><img src="/source/icon/logo_footer.svg" alt=""></a>
-      <img src="./source/Line 24.svg" alt="">
-      <p>Leaders of Pesticide testing</p>    
-    </div>
-    <div class="mark">
-      <a href="">Accessibility</a>
-      <a href="">Accessibility</a>
-      <a href="">Accessibility</a>
-    </div>
-  </div>
-</footer>
+
+<!-- JavaScript -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="/js/main.js"></script>
+
 </html>
